@@ -10,6 +10,7 @@
     <import index="7xvd" ref="r:9a9f0076-10a8-4fb8-a30a-692bd3a097dc(com.geno1024.chatbotlang.structure)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -20,6 +21,8 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
     </language>
@@ -30,9 +33,14 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
@@ -40,6 +48,9 @@
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -130,6 +141,31 @@
     </node>
     <node concept="13hLZK" id="2c2jK0Uo5HW" role="13h7CW">
       <node concept="3clFbS" id="2c2jK0Uo5HX" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4zqelTg5Kqx">
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure" />
+    <ref role="13h7C2" to="7xvd:4zqelTg5B6H" resolve="Account" />
+    <node concept="13i0hz" id="4zqelTg5KqG" role="13h7CS">
+      <property role="TrG5h" value="login" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="4zqelTg5KqH" role="1B3o_S" />
+      <node concept="3uibUv" id="4zqelTg5KqW" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3clFbS" id="4zqelTg5KqJ" role="3clF47" />
+      <node concept="37vLTG" id="4zqelTg5Krg" role="3clF46">
+        <property role="TrG5h" value="username" />
+        <node concept="17QB3L" id="4zqelTg5Krf" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4zqelTg5Kru" role="3clF46">
+        <property role="TrG5h" value="password" />
+        <node concept="17QB3L" id="4zqelTg5Kr$" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="4zqelTg5Kqy" role="13h7CW">
+      <node concept="3clFbS" id="4zqelTg5Kqz" role="2VODD2" />
     </node>
   </node>
 </model>

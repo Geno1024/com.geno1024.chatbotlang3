@@ -28,5 +28,10 @@
     <property role="TrG5h" value="QQ" />
     <ref role="1TJDcQ" to="7xvd:2c2jK0UnBOm" resolve="SubLanguage" />
   </node>
+  <node concept="1TIwiD" id="4zqelTg5KsQ">
+    <property role="EcuMT" value="5249571392887129910" />
+    <property role="TrG5h" value="QQAccount" />
+    <ref role="1TJDcQ" to="7xvd:4zqelTg5B6H" resolve="Account" />
+  </node>
 </model>
 

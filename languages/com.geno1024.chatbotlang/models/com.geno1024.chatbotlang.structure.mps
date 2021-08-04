@@ -84,16 +84,6 @@
       <ref role="20lvS9" node="2c2jK0UnUSj" resolve="Reply" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2c2jK0UnBOm">
-    <property role="EcuMT" value="2522665603678764310" />
-    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure" />
-    <property role="TrG5h" value="SubLanguage" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2c2jK0UnDxz" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2c2jK0UnUSj">
     <property role="EcuMT" value="2522665603678842387" />
     <property role="3GE5qa" value="com.geno1024.chatbotlang.structure" />
@@ -178,6 +168,33 @@
       <property role="20kJfa" value="function" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2c2jK0Uo5Ax" resolve="InputAwareReplyFunction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4zqelTg5B6H">
+    <property role="EcuMT" value="5249571392887091629" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure" />
+    <property role="TrG5h" value="Account" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4zqelTg5KnU" role="1TKVEl">
+      <property role="IQ2nx" value="5249571392887129594" />
+      <property role="TrG5h" value="username" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4zqelTg5Kpd" role="1TKVEl">
+      <property role="IQ2nx" value="5249571392887129677" />
+      <property role="TrG5h" value="password" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2c2jK0UnBOm">
+    <property role="EcuMT" value="2522665603678764310" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure" />
+    <property role="TrG5h" value="SubLanguage" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2c2jK0UnDxz" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
