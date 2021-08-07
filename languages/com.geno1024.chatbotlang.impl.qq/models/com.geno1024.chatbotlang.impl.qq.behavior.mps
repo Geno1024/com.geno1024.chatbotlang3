@@ -97,7 +97,7 @@
               <ref role="3uigEE" to="4oku:~Bot" resolve="Bot" />
             </node>
             <node concept="2OqwBi" id="4zqelTg5LKC" role="33vP2m">
-              <node concept="10M0yZ" id="4zqelTg5L$M" role="2Oq$k0">
+              <node concept="10M0yZ" id="49WvUPtJCJ8" role="2Oq$k0">
                 <ref role="3cqZAo" to="4oku:~BotFactory.INSTANCE" resolve="INSTANCE" />
                 <ref role="1PxDUh" to="4oku:~BotFactory" resolve="BotFactory" />
               </node>
