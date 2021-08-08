@@ -14,7 +14,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
@@ -87,7 +86,7 @@
       <node concept="1Z5TYs" id="2c2jK0Uob33" role="3cqZAp">
         <node concept="mw_s8" id="2c2jK0Uob3n" role="1ZfhKB">
           <node concept="2c44tf" id="2c2jK0Uob3j" role="mwGJk">
-            <node concept="3cpWsb" id="2c2jK0Uob3H" role="2c44tc" />
+            <node concept="17QB3L" id="70opIplfeF3" role="2c44tc" />
           </node>
         </node>
         <node concept="mw_s8" id="2c2jK0Uob36" role="1ZfhK$">

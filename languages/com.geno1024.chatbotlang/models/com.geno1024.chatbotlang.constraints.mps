@@ -59,7 +59,7 @@
   </registry>
   <node concept="1M2fIO" id="2c2jK0Uo2D6">
     <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.reply" />
-    <ref role="1M2myG" to="7xvd:2c2jK0Uo2Cr" resolve="StaticReply" />
+    <ref role="1M2myG" to="7xvd:2c2jK0Uo2Cr" resolve="StaticTextReply" />
     <node concept="EnEH3" id="2c2jK0Uo2D7" role="1MhHOB">
       <ref role="EomxK" to="7xvd:2c2jK0Uo2Cl" resolve="type" />
       <node concept="Eqf_E" id="2c2jK0Uo2DO" role="EtsB7">
@@ -80,7 +80,7 @@
   </node>
   <node concept="1M2fIO" id="2c2jK0Up1Iy">
     <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.reply" />
-    <ref role="1M2myG" to="7xvd:2c2jK0UozfT" resolve="InputAwareReply" />
+    <ref role="1M2myG" to="7xvd:2c2jK0UozfT" resolve="InputAwareTextReply" />
     <node concept="EnEH3" id="2c2jK0Up1Iz" role="1MhHOB">
       <ref role="EomxK" to="7xvd:2c2jK0Uo2Cl" resolve="type" />
       <node concept="Eqf_E" id="2c2jK0Up1Jl" role="EtsB7">
@@ -92,6 +92,69 @@
               </node>
               <node concept="2ViDtV" id="2c2jK0Up2uo" role="2OqNvi">
                 <ref role="2ViDtZ" to="7xvd:2c2jK0Uo2Ci" resolve="InputAware" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="49WvUPuoo43">
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.trigger" />
+    <ref role="1M2myG" to="7xvd:49WvUPuolow" resolve="OnBoot" />
+    <node concept="EnEH3" id="49WvUPuoobo" role="1MhHOB">
+      <ref role="EomxK" to="7xvd:49WvUPuomFd" resolve="type" />
+      <node concept="Eqf_E" id="49WvUPuooAk" role="EtsB7">
+        <node concept="3clFbS" id="49WvUPuooAl" role="2VODD2">
+          <node concept="3cpWs6" id="49WvUPuop38" role="3cqZAp">
+            <node concept="2OqwBi" id="49WvUPuopIE" role="3cqZAk">
+              <node concept="1XH99k" id="49WvUPuopdt" role="2Oq$k0">
+                <ref role="1XH99l" to="7xvd:49WvUPuomwe" resolve="TriggerType" />
+              </node>
+              <node concept="2ViDtV" id="49WvUPuopZS" role="2OqNvi">
+                <ref role="2ViDtZ" to="7xvd:49WvUPuomwf" resolve="OnBoot" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="70opIpleinx">
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.target" />
+    <ref role="1M2myG" to="7xvd:70opIplefYT" resolve="GroupTarget" />
+    <node concept="EnEH3" id="70opIpleiuQ" role="1MhHOB">
+      <ref role="EomxK" to="7xvd:70opIplehPv" resolve="type" />
+      <node concept="Eqf_E" id="70opIpleixI" role="EtsB7">
+        <node concept="3clFbS" id="70opIpleixJ" role="2VODD2">
+          <node concept="3cpWs6" id="70opIpleiIq" role="3cqZAp">
+            <node concept="2OqwBi" id="70opIplejmG" role="3cqZAk">
+              <node concept="1XH99k" id="70opIpleiR7" role="2Oq$k0">
+                <ref role="1XH99l" to="7xvd:70opIpldL4f" resolve="TargetType" />
+              </node>
+              <node concept="2ViDtV" id="70opIplejEV" role="2OqNvi">
+                <ref role="2ViDtZ" to="7xvd:70opIpldL9x" resolve="GroupChat" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="70opIplel7a">
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.target" />
+    <ref role="1M2myG" to="7xvd:70opIplekES" resolve="DirectTarget" />
+    <node concept="EnEH3" id="70opIplelbD" role="1MhHOB">
+      <ref role="EomxK" to="7xvd:70opIplehPv" resolve="type" />
+      <node concept="Eqf_E" id="70opIplelkh" role="EtsB7">
+        <node concept="3clFbS" id="70opIplelki" role="2VODD2">
+          <node concept="3cpWs6" id="70opIpleltH" role="3cqZAp">
+            <node concept="2OqwBi" id="70opIplembi" role="3cqZAk">
+              <node concept="1XH99k" id="70opIplel$_" role="2Oq$k0">
+                <ref role="1XH99l" to="7xvd:70opIpldL4f" resolve="TargetType" />
+              </node>
+              <node concept="2ViDtV" id="70opIplems6" role="2OqNvi">
+                <ref role="2ViDtZ" to="7xvd:70opIpldL4g" resolve="DirectChat" />
               </node>
             </node>
           </node>

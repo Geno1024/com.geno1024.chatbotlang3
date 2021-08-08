@@ -67,6 +67,7 @@
     <dependency reexport="false">88cbde4d-73eb-4ce7-a6c5-b6d388b50583(com.geno1024.chatbotlang)</dependency>
     <dependency reexport="false">5dae8159-ab99-46bb-a40d-0cee30ee7018(jetbrains.mps.lang.constraints.rules.kinds)</dependency>
     <dependency reexport="false">07274949-c3ce-4e56-ba72-75c07c0ec361(com.geno1024.chatbotlang.impl.qq.runtime)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />

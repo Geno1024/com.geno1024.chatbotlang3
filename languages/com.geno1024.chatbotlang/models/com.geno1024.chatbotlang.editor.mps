@@ -23,13 +23,22 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -127,6 +136,28 @@
         <node concept="2iRfu4" id="49WvUPtuDy4" role="2iSdaV" />
       </node>
       <node concept="35HoNQ" id="49WvUPtwYS0" role="3EZMnx" />
+      <node concept="3EZMnI" id="49WvUPuosgy" role="3EZMnx">
+        <node concept="VPM3Z" id="49WvUPuosg$" role="3F10Kt" />
+        <node concept="3XFhqQ" id="49WvUPuosDP" role="3EZMnx" />
+        <node concept="3EZMnI" id="49WvUPuosGL" role="3EZMnx">
+          <node concept="VPM3Z" id="49WvUPuosGN" role="3F10Kt" />
+          <node concept="3F0ifn" id="49WvUPuosSn" role="3EZMnx">
+            <property role="3F0ifm" value="Trigger pool" />
+          </node>
+          <node concept="3EZMnI" id="49WvUPuosZL" role="3EZMnx">
+            <node concept="VPM3Z" id="49WvUPuosZN" role="3F10Kt" />
+            <node concept="3XFhqQ" id="49WvUPuotaw" role="3EZMnx" />
+            <node concept="3F2HdR" id="49WvUPuotik" role="3EZMnx">
+              <ref role="1NtTu8" to="7xvd:49WvUPuorfS" resolve="triggerPool" />
+              <node concept="2EHx9g" id="49WvUPuotnG" role="2czzBx" />
+            </node>
+            <node concept="2iRfu4" id="49WvUPuosZQ" role="2iSdaV" />
+          </node>
+          <node concept="2iRkQZ" id="49WvUPuosGQ" role="2iSdaV" />
+        </node>
+        <node concept="2iRfu4" id="49WvUPuosgB" role="2iSdaV" />
+      </node>
+      <node concept="35HoNQ" id="49WvUPuos3e" role="3EZMnx" />
       <node concept="3EZMnI" id="2c2jK0UnUT0" role="3EZMnx">
         <node concept="VPM3Z" id="2c2jK0UnUT2" role="3F10Kt" />
         <node concept="3XFhqQ" id="2c2jK0UnUTj" role="3EZMnx" />
@@ -186,7 +217,7 @@
   </node>
   <node concept="24kQdi" id="2c2jK0Uo2C_">
     <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.reply" />
-    <ref role="1XX52x" to="7xvd:2c2jK0Uo2Cr" resolve="StaticReply" />
+    <ref role="1XX52x" to="7xvd:2c2jK0Uo2Cr" resolve="StaticTextReply" />
     <node concept="3EZMnI" id="2c2jK0Uo2CB" role="2wV5jI">
       <node concept="3F0A7n" id="2c2jK0Uo2CL" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -205,7 +236,7 @@
   </node>
   <node concept="24kQdi" id="2c2jK0UoYxf">
     <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.reply" />
-    <ref role="1XX52x" to="7xvd:2c2jK0UozfT" resolve="InputAwareReply" />
+    <ref role="1XX52x" to="7xvd:2c2jK0UozfT" resolve="InputAwareTextReply" />
     <node concept="3EZMnI" id="2c2jK0UoYxh" role="2wV5jI">
       <node concept="3F0A7n" id="2c2jK0UoYxo" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -233,6 +264,54 @@
       <node concept="3F0A7n" id="2c2jK0UnDy5" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="49WvUPuoqd9">
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.trigger" />
+    <ref role="1XX52x" to="7xvd:49WvUPuolow" resolve="OnBoot" />
+    <node concept="3EZMnI" id="49WvUPuoqjh" role="2wV5jI">
+      <node concept="3F0ifn" id="49WvUPupXkH" role="3EZMnx">
+        <property role="3F0ifm" value="If" />
+      </node>
+      <node concept="3F0ifn" id="49WvUPupY4K" role="3EZMnx">
+        <property role="3F0ifm" value="BOOT" />
+        <node concept="VechU" id="49WvUPupY9G" role="3F10Kt">
+          <property role="Vb096" value="fLwANPs/magenta" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="49WvUPupYsZ" role="3EZMnx">
+        <property role="3F0ifm" value="send to" />
+      </node>
+      <node concept="3F2HdR" id="70opIplenPx" role="3EZMnx">
+        <ref role="1NtTu8" to="7xvd:70opIpleqvZ" resolve="target" />
+        <node concept="2EHx9g" id="70opIplenUA" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="49WvUPupZ3X" role="3EZMnx">
+        <property role="3F0ifm" value="with" />
+      </node>
+      <node concept="1iCGBv" id="49WvUPutyIY" role="3EZMnx">
+        <ref role="1NtTu8" to="7xvd:49WvUPuonlT" resolve="reply" />
+        <node concept="1sVBvm" id="49WvUPutyJ0" role="1sWHZn">
+          <node concept="3F0A7n" id="49WvUPutzbf" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="49WvUPuoqjk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="70opIplejQR">
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.target" />
+    <ref role="1XX52x" to="7xvd:70opIplefYT" resolve="GroupTarget" />
+    <node concept="3EZMnI" id="70opIplekgV" role="2wV5jI">
+      <node concept="3F0ifn" id="70opIpleksU" role="3EZMnx">
+        <property role="3F0ifm" value="Group" />
+      </node>
+      <node concept="3F0A7n" id="70opIplekzw" role="3EZMnx">
+        <ref role="1NtTu8" to="7xvd:70opIplek0D" resolve="target" />
+      </node>
+      <node concept="2iRfu4" id="70opIplekgY" role="2iSdaV" />
     </node>
   </node>
 </model>

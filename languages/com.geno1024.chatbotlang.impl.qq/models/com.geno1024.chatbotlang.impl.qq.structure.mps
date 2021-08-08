@@ -33,5 +33,10 @@
     <property role="TrG5h" value="QQAccount" />
     <ref role="1TJDcQ" to="7xvd:4zqelTg5B6H" resolve="Account" />
   </node>
+  <node concept="1TIwiD" id="70opIpldxt0">
+    <property role="EcuMT" value="8077319071147104064" />
+    <property role="TrG5h" value="QQOnBoot" />
+    <ref role="1TJDcQ" to="7xvd:49WvUPuolow" resolve="OnBoot" />
+  </node>
 </model>
 
