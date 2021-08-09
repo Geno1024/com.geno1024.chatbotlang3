@@ -35,6 +35,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -161,47 +162,6 @@
       <node concept="3clFbS" id="2c2jK0Uo5HX" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="4zqelTg5Kqx">
-    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure" />
-    <ref role="13h7C2" to="7xvd:4zqelTg5B6H" resolve="Account" />
-    <node concept="13i0hz" id="4zqelTg5KqG" role="13h7CS">
-      <property role="TrG5h" value="login" />
-      <property role="13i0it" value="true" />
-      <property role="13i0iv" value="true" />
-      <node concept="3Tm1VV" id="4zqelTg5KqH" role="1B3o_S" />
-      <node concept="3uibUv" id="4zqelTg5KqW" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
-      <node concept="3clFbS" id="4zqelTg5KqJ" role="3clF47" />
-      <node concept="37vLTG" id="4zqelTg5Krg" role="3clF46">
-        <property role="TrG5h" value="username" />
-        <node concept="17QB3L" id="4zqelTg5Krf" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="4zqelTg5Kru" role="3clF46">
-        <property role="TrG5h" value="password" />
-        <node concept="17QB3L" id="4zqelTg5Kr$" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="70opIpjP9KT" role="13h7CS">
-      <property role="TrG5h" value="run" />
-      <property role="13i0it" value="true" />
-      <property role="13i0iv" value="true" />
-      <node concept="3Tm1VV" id="70opIpjP9KU" role="1B3o_S" />
-      <node concept="3uibUv" id="70opIpjP9Pl" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
-      <node concept="3clFbS" id="70opIpjP9KW" role="3clF47" />
-      <node concept="37vLTG" id="70opIpjPbar" role="3clF46">
-        <property role="TrG5h" value="state" />
-        <node concept="3uibUv" id="70opIpjPbaq" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-        </node>
-      </node>
-    </node>
-    <node concept="13hLZK" id="4zqelTg5Kqy" role="13h7CW">
-      <node concept="3clFbS" id="4zqelTg5Kqz" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="70opIpldzbS">
     <property role="3GE5qa" value="com.geno1024.chatbotlang.structure" />
     <ref role="13h7C2" to="7xvd:49WvUPuolTq" resolve="Trigger" />
@@ -317,6 +277,53 @@
           <ref role="ehGHo" to="7xvd:2c2jK0UnUSj" resolve="Reply" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="70opIpoL5hw">
+    <property role="3GE5qa" value="com.geno1024.chatbotlang.structure" />
+    <ref role="13h7C2" to="7xvd:2c2jK0UnBOm" resolve="SubLanguage" />
+    <node concept="13i0hz" id="4zqelTg5KqG" role="13h7CS">
+      <property role="TrG5h" value="login" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="4zqelTg5KqH" role="1B3o_S" />
+      <node concept="3uibUv" id="4zqelTg5KqW" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3clFbS" id="4zqelTg5KqJ" role="3clF47">
+        <node concept="3clFbF" id="70opIppaQ_F" role="3cqZAp">
+          <node concept="10Nm6u" id="70opIppaQ_E" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4zqelTg5Krg" role="3clF46">
+        <property role="TrG5h" value="username" />
+        <node concept="17QB3L" id="4zqelTg5Krf" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4zqelTg5Kru" role="3clF46">
+        <property role="TrG5h" value="password" />
+        <node concept="17QB3L" id="4zqelTg5Kr$" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="70opIpjP9KT" role="13h7CS">
+      <property role="TrG5h" value="run" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="70opIpjP9KU" role="1B3o_S" />
+      <node concept="3uibUv" id="70opIpjP9Pl" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3clFbS" id="70opIpjP9KW" role="3clF47">
+        <node concept="3clFbF" id="70opIppaQYW" role="3cqZAp">
+          <node concept="10Nm6u" id="70opIppaQYV" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="70opIpjPbar" role="3clF46">
+        <property role="TrG5h" value="state" />
+        <node concept="3uibUv" id="70opIpjPbaq" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="70opIpoL5hx" role="13h7CW">
+      <node concept="3clFbS" id="70opIpoL5hy" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -312,11 +312,6 @@
     <property role="3GE5qa" value="com.geno1024.chatbotlang.structure.target" />
     <property role="TrG5h" value="GroupTarget" />
     <ref role="1TJDcQ" node="70opIplegRm" resolve="Target" />
-    <node concept="1TJgyi" id="70opIplek0D" role="1TKVEl">
-      <property role="IQ2nx" value="8077319071147311145" />
-      <property role="TrG5h" value="target" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="70opIplegRm">
     <property role="EcuMT" value="8077319071147298262" />
@@ -328,6 +323,11 @@
       <property role="IQ2nx" value="8077319071147302239" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="70opIpldL4f" resolve="TargetType" />
+    </node>
+    <node concept="1TJgyi" id="70opIpskMUG" role="1TKVEl">
+      <property role="IQ2nx" value="8077319071266451116" />
+      <property role="TrG5h" value="target" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="70opIplekES">
