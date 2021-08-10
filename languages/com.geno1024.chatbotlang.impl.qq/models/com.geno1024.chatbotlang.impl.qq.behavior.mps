@@ -12,7 +12,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="7xvd" ref="r:9a9f0076-10a8-4fb8-a30a-692bd3a097dc(com.geno1024.chatbotlang.structure)" />
     <import index="2ti8" ref="r:d13b8abc-6a97-44ed-890d-1f2076436091(com.geno1024.chatbotlang.impl.qq.structure)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="ztls" ref="07274949-c3ce-4e56-ba72-75c07c0ec361/java:net.mamoe.mirai.contact(com.geno1024.chatbotlang.impl.qq.runtime/)" implicit="true" />
   </imports>
   <registry>
@@ -88,8 +87,10 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -98,6 +99,9 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1235746970280" name="jetbrains.mps.baseLanguage.closures.structure.CompactInvokeFunctionExpression" flags="nn" index="2Sg_IR">
@@ -173,7 +177,22 @@
       </node>
       <node concept="3clFbS" id="4zqelTgqEQk" role="3clF47">
         <node concept="3cpWs6" id="4zqelTgqESV" role="3cqZAp">
-          <node concept="10Nm6u" id="4zqelTgqETN" role="3cqZAk" />
+          <node concept="10Nm6u" id="70opIpwjWm9" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="70opIpwjWJI" role="13h7CS">
+      <property role="TrG5h" value="classType" />
+      <node concept="3Tm1VV" id="70opIpwjWJJ" role="1B3o_S" />
+      <node concept="3uibUv" id="70opIpwjX1L" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="70opIpwjXee" role="11_B2D" />
+      </node>
+      <node concept="3clFbS" id="70opIpwjWJL" role="3clF47">
+        <node concept="3clFbF" id="70opIpwjY9R" role="3cqZAp">
+          <node concept="3VsKOn" id="70opIpwjXQl" role="3clFbG">
+            <ref role="3VsUkX" to="4oku:~Bot" resolve="Bot" />
+          </node>
         </node>
       </node>
     </node>
@@ -273,48 +292,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="70opIprYRWx" role="13h7CS">
-      <property role="TrG5h" value="triggered_OnBoot_DirectChat_StaticText" />
-      <node concept="3Tm1VV" id="70opIprYRWy" role="1B3o_S" />
-      <node concept="3cqZAl" id="70opIprYSeW" role="3clF45" />
-      <node concept="3clFbS" id="70opIprYRW$" role="3clF47">
-        <node concept="3clFbF" id="70opIprZxUE" role="3cqZAp">
-          <node concept="2OqwBi" id="70opIprZyJi" role="3clFbG">
-            <node concept="10M0yZ" id="70opIprZyJj" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" />
-            </node>
-            <node concept="liA8E" id="70opIprZyJk" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println()" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="70opIprYSta" role="3clF46">
-        <property role="TrG5h" value="state" />
-        <node concept="3uibUv" id="70opIprYSt9" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="70opIprZx90" role="3clF46">
-        <property role="TrG5h" value="target" />
-        <node concept="3uibUv" id="70opIprZxsU" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="70opIprYSAO" role="3clF46">
-        <property role="TrG5h" value="message" />
-        <node concept="3uibUv" id="70opIpslL3J" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="70opIprYTXH" role="3clF46">
-        <property role="TrG5h" value="reply" />
-        <node concept="3uibUv" id="70opIprYUix" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-        </node>
-      </node>
-    </node>
     <node concept="13i0hz" id="70opIprOZTR" role="13h7CS">
       <property role="TrG5h" value="triggered_OnBoot_GroupChat_StaticText" />
       <node concept="3Tm1VV" id="70opIprOZTS" role="1B3o_S" />
@@ -382,6 +359,36 @@
       <node concept="37vLTG" id="70opIprP1Tk" role="3clF46">
         <property role="TrG5h" value="reply" />
         <node concept="3uibUv" id="70opIprP1YW" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="70opIpyvti5" role="13h7CS">
+      <property role="TrG5h" value="triggered_OnBoot_GroupChat_InputAwareText" />
+      <node concept="3Tm1VV" id="70opIpyvti6" role="1B3o_S" />
+      <node concept="3cqZAl" id="70opIpyvtpH" role="3clF45" />
+      <node concept="3clFbS" id="70opIpyvti8" role="3clF47" />
+      <node concept="37vLTG" id="70opIpyxlbD" role="3clF46">
+        <property role="TrG5h" value="state" />
+        <node concept="3uibUv" id="70opIpyxlbC" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="70opIpyxloe" role="3clF46">
+        <property role="TrG5h" value="target" />
+        <node concept="3uibUv" id="70opIpyxl$F" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="70opIpyxlOI" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="3uibUv" id="70opIpyxlVy" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="70opIpyxmay" role="3clF46">
+        <property role="TrG5h" value="reply" />
+        <node concept="3uibUv" id="70opIpyxmj0" role="1tU5fm">
           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>

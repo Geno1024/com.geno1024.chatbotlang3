@@ -31,6 +31,7 @@
         <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
         <dependency reexport="false">af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</dependency>
         <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
+        <dependency reexport="false">07274949-c3ce-4e56-ba72-75c07c0ec361(com.geno1024.chatbotlang.impl.qq.runtime)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -59,6 +60,7 @@
         <module reference="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" version="0" />
         <module reference="88cbde4d-73eb-4ce7-a6c5-b6d388b50583(com.geno1024.chatbotlang)" version="0" />
         <module reference="c8ae3c55-d780-40bd-92b3-61e1e48d6ce8(com.geno1024.chatbotlang.generator)" version="0" />
+        <module reference="07274949-c3ce-4e56-ba72-75c07c0ec361(com.geno1024.chatbotlang.impl.qq.runtime)" version="0" />
         <module reference="e2b1a40b-4fbb-414d-911c-bc06daad042a(com.geno1024.chatbotlang.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
